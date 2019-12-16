@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <title>Jogo adivinhação</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="text/javascript" src="main.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+</head>
+
+<body>
+  
+  <div class="jumbotron text-center">
+    <div class="container">
+      <h1 class="display-4">Jogo de adivinhação</h1>
+      <p class="lead">Adivinhe o número que estou pensando...</p>
+    </div>
+  </div>
+  
+  <div class="container">
+    
+    
+    <div class="container">
+      
+      <section id="comoJogar">
+        <h2> Como jogar</h2>
+        <ol>
+          <li>Clicar no botão 'Gerar número'</li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+      </section>
+    </div>
+    
+    
+    
+    <div class="container text-center">
+      
+      <section id="corpoJogo">
+        <input type="number" class="form-control" id="numChute" placeholder="Digite um número">
+        
+        <br>
+        
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col col-sm-2 col-md-6 col-lg-4 col-xl-4">
+              <button type="button" class="btn btn-success" id="chutarNum" onclick="chutarNumero()">Chutar !!</button>
+            </div>
+            
+            <div class="col col-sm-2 col-md-6 col-lg-4 col-xl-4">
+              <button type="button" class="btn btn-danger" id="resetarJogo" onclick="resetGame()">Reset jogo</button>
+            </div>
+          </div>
+          
+          <br>
+          
+          <p id="info1" class="alert alert-primary" role="alert" style="display:none;"> </p>
+          
+          <p id="info2" class="alert alert-danger" role="alert" style="display:none;"> </p>
+          
+          <p id="mostrarDicas" class="alert alert-warning" role="alert"> DICAS: </p>
+          
+          <table class="table table-striped table-dark">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Chutes</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        </body>
+        
+        </html>
