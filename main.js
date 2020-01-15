@@ -1,43 +1,29 @@
-// 1 [OK] Gerar um número aleatório
-
-// 2 [OK] Verificar se o valor é <= 0 ou vazio, caso seja nao pode ser adicionado no array
-
-// 3 [OK] Verificar se houve o acerto do número
-
-// 4 [OK] Verifica se o jogador ja atingiu o tanto de tentarivas estipulado
-
-// 5 [] Mostrar detalhes/informações da rodada.
-
-// 6 [OK] Resetar o jogo
-
-// 7 [OK] Esconder div's, abrir somente quando tiver conteúdo
-
-/* 8 [] Desenvolver as *dicas* com fórmulas e teorias matemáticas.
-  
-  ex: Número gerado: 3
-      Dica: É um número primo..
+/*  1 [OK] Gerar um número aleatório
+    2 [OK] Verificar se o valor é <= 0 ou vazio, caso seja nao pode ser adicionado no array
+    3 [OK] Verificar se houve o acerto do número
+    4 [OK] Verifica se o jogador ja atingiu a quantidade de tentativas que foi estipulado
+    5 [] Mostrar detalhes/informações da rodada.
+    6 [OK] Resetar o jogo
+    7 [OK] Esconder div's, abrir somente quando tiver conteúdo
+    8 [] Desenvolver as *dicas* com fórmulas e teorias matemáticas.
+        ex: Número gerado: 3
+        Dica: É um número primo..
 */
 
 
 const tentativas = [];
 const numChances = 5;
 
-
-function numeroAleatorio (){
-window.aleatorio = Math.floor(Math.random () * 50 + 1)
-
-console.log(aleatorio)
-
-}
-
-
 window.onload = function() {
   numeroAleatorio()
-  
+}
+
+function numeroAleatorio (){
+  window.aleatorio = Math.floor(Math.random () * 50 + 1)
+  console.log(aleatorio)
 }
 
 function verificaSeValorZeroOuVazio (chute){
-  
   let info = document.getElementById('info2');
   
   if (chute <= 0 || chute == ""){
