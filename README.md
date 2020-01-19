@@ -1,4 +1,5 @@
 # JOGO DE ADIVINHAÇÃO
+#### Jogo desenvolvido via celular usando o aplicativo: Spck Editor
 
 ### Objetivo da criação desse jogo:
 
